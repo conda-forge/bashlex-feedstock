@@ -1,6 +1,6 @@
 {% set name = "bashlex" %}
-{% set version = "0.12" %}
-{% set sha256 = "94bcf8759f28286d4fe2bbc408fa50e9fb7c46fa7097eac5b7cd76d75ca9936d" %}
+{% set version = "0.13" %}
+{% set sha256 = "cd238320e00cc6f4e8b994e5f0f61e71630a3eda16538f920fda256dc17aafc9" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
