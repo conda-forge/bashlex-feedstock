@@ -1,6 +1,6 @@
 {% set name = "bashlex" %}
-{% set version = "0.14" %}
-{% set sha256 = "5a92e0900b7a91de93a338b3fae651adc2b6a0e9656972b9e2ed3afd9c492ffd" %}
+{% set version = "0.15" %}
+{% set sha256 = "fe539cf9eba046f60a8d32eda2a28e9dccdd06cb4b9f5089ec658348ea53a6dd" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -34,9 +34,9 @@ about:
   # License file added manually so far:
   # https://github.com/idank/bashlex/issues/27
   # https://github.com/conda-forge/staged-recipes/pull/4401
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
   dev_url: https://github.com/idank/bashlex
-  summary: 'Python parser for bash'
+  summary: Python parser for bash
 
 extra:
   recipe-maintainers:
