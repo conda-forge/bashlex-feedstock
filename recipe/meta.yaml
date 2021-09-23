@@ -1,6 +1,6 @@
 {% set name = "bashlex" %}
-{% set version = "0.15" %}
-{% set sha256 = "fe539cf9eba046f60a8d32eda2a28e9dccdd06cb4b9f5089ec658348ea53a6dd" %}
+{% set version = "0.16" %}
+{% set sha256 = "dc6f017e49ce2d0fe30ad9f5206da9cd13ded073d365688c9fda525354e8c373" %}
 
 package:
   name: {{ name|lower }}
@@ -12,13 +12,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   host:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - enum34  # [py<34]
@@ -29,7 +29,7 @@ test:
 
 about:
   home: https://github.com/idank/bashlex
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_family: GPL
   # License file added manually so far:
   # https://github.com/idank/bashlex/issues/27
