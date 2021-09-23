@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - enum34  # [py<34]
@@ -29,7 +29,7 @@ test:
 
 about:
   home: https://github.com/idank/bashlex
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_family: GPL
   # License file added manually so far:
   # https://github.com/idank/bashlex/issues/27
