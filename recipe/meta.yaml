@@ -1,6 +1,6 @@
 {% set name = "bashlex" %}
-{% set version = "0.16" %}
-{% set sha256 = "dc6f017e49ce2d0fe30ad9f5206da9cd13ded073d365688c9fda525354e8c373" %}
+{% set version = "0.17" %}
+{% set sha256 = "2aed062438e10ee89742bc80969793cd9ee4a3fab6cfb2365e43731aabd21010" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
