@@ -1,6 +1,6 @@
 {% set name = "bashlex" %}
-{% set version = "0.17" %}
-{% set sha256 = "2aed062438e10ee89742bc80969793cd9ee4a3fab6cfb2365e43731aabd21010" %}
+{% set version = "0.18" %}
+{% set sha256 = "5bb03a01c6d5676338c36fd1028009c8ad07e7d61d8a1ce3f513b7fff52796ee" %}
 
 package:
   name: {{ name|lower }}
